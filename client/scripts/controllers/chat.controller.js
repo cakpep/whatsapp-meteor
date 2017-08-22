@@ -21,6 +21,7 @@ export default class ChatCtrl extends Controller {
             }
         });
     }
+
     sendMessage() {
         if (_.isEmpty(this.message)) return;
  
@@ -32,6 +33,7 @@ export default class ChatCtrl extends Controller {
 
         delete this.message;
     }
+
     inputUp () {
         if (this.isIOS) {
           this.keyboardHeight = 216;
